@@ -1,0 +1,58 @@
+<% include _header %>
+<div class="row">
+
+  <div class="col-xs-12">
+    <% if(errors.length !== 0) {%>
+      <% errors.forEach(function(error) { %>
+        <p class="alert alert-danger" role="alert">
+          <%= error.msg %>
+        </p>
+      <% }) %>
+    <% } %>
+  </div>
+
+  <div class="col-xs-12">
+    <form action="/signup" method="POST" role="form">
+      <legend>Sign Up</legend>
+
+      <div class="form-group">
+        <label for="">User Name</label>
+        <input name="userName" type="text" class="form-control" 
+          placeholder="User Name (required)" required autofocus value="<%= user.userName %>">
+      </div>
+
+      <div class="form-group">
+        <label for="">First Name</label>
+        <input name="firstName" type="text" class="form-control" 
+          placeholder="First Name (optional)" value="<%= user.firstName %>">
+      </div>
+
+      <div class="form-group">
+        <label for="">Last Name</label>
+        <input name="lastName" type="text" class="form-control" 
+          placeholder="Last Name (optional)" value="<%= user.lastName %>">
+      </div>
+
+      <div class="form-group">
+        <label for="">Password</label>
+        <input name="password" type="password" class="form-control" 
+          placeholder="Length between 4 and 16 characters (required)" required value="<%= user.password %>">
+      </div>
+
+      <div class="form-group">
+        <label for="">Email</label>
+        <input name="eMail" type="text" class="form-control" 
+          placeholder="name@example.com (required)" required value="<%= user.eMail %>">
+      </div>
+
+      <div class="form-group">
+        <label for="">Biography</label>
+        <textarea name="bio" type="text" class="form-control" 
+          placeholder="Write something about yourself (optional)"><%= user.bio %></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+<% include _footer %>

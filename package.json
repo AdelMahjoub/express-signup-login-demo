@@ -1,0 +1,26 @@
+{
+  "name": "signup-login-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "^1.15.1",
+    "express-validator": "*",
+    "install": "^0.8.7",
+    "mongojs": "*",
+    "npm": "^4.2.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
