@@ -16,7 +16,7 @@
     "express-validator": "*",
     "install": "^0.8.7",
     "mongojs": "*",
-    "npm": "^4.2.0",
+    "npm": "^6.6.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0"
   },
